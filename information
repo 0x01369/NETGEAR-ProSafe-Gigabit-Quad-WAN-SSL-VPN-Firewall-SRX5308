@@ -1,0 +1,19 @@
+Linux SRX5308 2.6.21.7-Cavium-Octeon #6 Wed Jun 24 19:02:42 IST 2015 mips64 GNU/Linux
+
+uid=0(root) gid=0(root)
+
+cat cpuinfo
+system type             : CUST_SRX5308 (CN5010p1.1-700-SCP)
+processor               : 0
+cpu model               : Cavium Networks Octeon V0.1
+BogoMIPS                : 1400.37
+wait instruction        : yes
+microsecond timers      : yes
+tlb_entries             : 64
+extra interrupt vector  : yes
+hardware watchpoint     : yes
+ASEs implemented        :
+VCED exceptions         : not available
+VCEI exceptions         : not available
+
+

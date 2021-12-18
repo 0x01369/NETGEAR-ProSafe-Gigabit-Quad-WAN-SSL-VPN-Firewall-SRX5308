@@ -1,0 +1,5 @@
+root:CxqJynrkPOtP.:0:0:root:/root:/bin/sh
+nobody:x:0:0:nobody:/nonexistent:/bin/false
+showid:1lBVM0/fM8rqk:0:0:sid:/:/pfrm2.0/bin/showid.sh
+admin:m1LVojhaR1U5Y:0:2:Linux User,,,:/home/admin:/pfrm2.0/bin/platform.cli
+guest:K7Vjga.vILkVA:0:1000:Linux User,,,:/home/guest:/pfrm2.0/bin/platform.cli
