@@ -15,5 +15,3 @@ hardware watchpoint     : yes
 ASEs implemented        :
 VCED exceptions         : not available
 VCEI exceptions         : not available
-
-
