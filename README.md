@@ -1,4 +1,4 @@
-# NETGEAR-ProSafe-Gigabit-Quad-WAN-SSL-VPN-Firewall-SRX5308
+# NETGEAR-ProSafe-Gigabit-Quad-WAN-SSL-VPN-Firewall-SRX5308 SQL Injection Vulnerability
 
 <img src="https://raw.githubusercontent.com/0x01369/NETGEAR-ProSafe-Gigabit-Quad-WAN-SSL-VPN-Firewall-SRX5308/main/images.jpg" class="shrinkToFit" width="700" height="284">
 
