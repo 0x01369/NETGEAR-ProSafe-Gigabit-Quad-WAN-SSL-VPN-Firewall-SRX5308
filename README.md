@@ -41,8 +41,6 @@ guest:K7Vjga.vILkVA:0:1000:Linux User,,,:/home/guest:/pfrm2.0/bin/platform.cli
 
 * password (guest)
 
-I can provide you with an overview of a boolean-based blind SQL injection vulnerability on the login page of the NETGEAR ProSafe™ Gigabit Quad WAN SSL VPN Firewall SRX5308.
-
 SQL injection is a type of vulnerability that occurs when a malicious user is able to input untrusted data into an application's SQL query, allowing them to execute arbitrary SQL commands on the database. Boolean-based blind SQL injection is a type of SQL injection that allows an attacker to determine the truth of a statement by injecting specific inputs and observing the response.
 
 In the case of the NETGEAR ProSafe™ Gigabit Quad WAN SSL VPN Firewall SRX5308, the vulnerability exists on the login page, where the device's authentication mechanism is vulnerable to a boolean-based blind SQL injection attack. An attacker could exploit this vulnerability by injecting malicious SQL code into the login form's fields, such as the username or password field, and observing the response from the device.
